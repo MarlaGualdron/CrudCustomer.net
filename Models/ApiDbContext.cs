@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using CrudCustomers.Api.Models;
 using CrudCustomers.Api.Maps;
 
 namespace CrudCustomers.Api.Models

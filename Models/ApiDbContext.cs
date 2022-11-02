@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using CrudCustomers.Api.Models;
+using CrudCustomers.Api.Maps;
 
 namespace CrudCustomers.Api.Models
 {
@@ -9,7 +11,7 @@ namespace CrudCustomers.Api.Models
 
         }
 
-        public Dbset<Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

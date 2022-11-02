@@ -1,5 +1,8 @@
-namespace CrudCustomers.Api.Models
+namespace CrudCustomers.Api.Models;
+
+public class Customer
 {
+
 	public int Id { get; set; }
 	public string Full_name { get; set; }
 	public DateTime Date_of_birth {get; set;}

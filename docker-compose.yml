@@ -1,11 +1,11 @@
 version: '3.4'
  
 networks:
-  mydockerapi-dev:
+  crudcustomers-dev:
     driver: bridge 
  
 services:
-  mydockerapi:
+  crudcustomers:
     image: crudcustomers:latest
     depends_on:
       - "postgres_image"

@@ -1,24 +1,24 @@
-version: '3.4'
- 
+version: "3.4"
+
 networks:
-  crudcustomers-dev:
-    driver: bridge 
- 
+  crudcustomersapi-dev:
+    driver: bridge
+
 services:
-  crudcustomers:
-    image: crudcustomers:latest
+  crudcustomersapi:
+    image: crudcustomersapi:latest
     depends_on:
       - "postgres_image"
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "3000:80"     
+      - "8000:80"
     environment:
       DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=customersdb;username=postgres;password=postgres"
     networks:
-      - crudcustomers-dev  
-  
+      - crudcustomersapi-dev
+
   postgres_image:
     image: postgres:latest
     ports:
@@ -32,7 +32,6 @@ services:
       POSTGRES_PASSWORD: "postgres"
       POSTGRES_DB: "customersdb"
     networks:
-      - crudcustomers-dev
+      - crudcustomersapi-dev
 volumes:
   db_volume:
-         

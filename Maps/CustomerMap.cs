@@ -10,7 +10,7 @@ namespace CrudCustomers.Api.Maps;
 
 	{
 		entityBuilder.HasKey(x => x.Id);
-		entityBuilder.ToTable("customers");
+		entityBuilder.ToTable("customer");
 
 		entityBuilder.Property(x => x.Id).HasColumnName("id");
 		entityBuilder.Property(x => x.Full_name).HasColumnName("full_name");

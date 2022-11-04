@@ -8,7 +8,7 @@ This is a CRUD in .Net with Docker and postgreSQL
 
 ### Run the application
 
-`git clone` https://github.com/MarlaGualdron/CrudCustomers.Api.git
+`git clone` [Repo] (https://github.com/MarlaGualdron/CrudCustomers.Api.git)
 
 `cd` CrudCustomers.Api
 
